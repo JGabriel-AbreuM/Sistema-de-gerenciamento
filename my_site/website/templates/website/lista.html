@@ -1,0 +1,54 @@
+{% extends "website/_layouts/base.html"%}
+
+{% block title %}Lista de Alunos{% endblock %}
+
+{% block conteudo %}
+
+    <div class="container-lista">
+        <h5>Lista de alunos</h5>
+        {% if alunos|length > 0%}
+
+            <table class="table" >
+                <thead class="thead-dark">
+                    <tr>
+                        <!-- <th align="center" scope="col"></th> -->
+                        <th align="center" scope="col">ID</th>
+                        <th align="center" scope="col">Nome</th>
+                        <th align="center" scope="col">Sobrenome</th>
+                        <th align="center" scope="col">CPF</th>
+                        <th align="center" scope="col">Curso</th>
+                        <th align="center" scope="col">Periodo</th>
+                        <th align="center" scope="col">E-mail</th>
+                        <th align="center" scope="col">Ações</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for aluno in alunos %}
+                        <tr>
+                            <td align="center">{{ aluno.id }}</td>
+                            <td align="center">{{ aluno.nome }}</td>
+                            <td align="center">{{ aluno.sobrenome }}</td>
+                            <td align="center">{{ aluno.cpf }}</td>
+                            <td align="center">{{ aluno.curso }}</td>
+                            <td align="center">{{ aluno.periodo }}°</td>
+                            <td align="center">{{ aluno.email }}</td>
+                            <td align="center" class="acoes">
+                                <a href="{% url 'website:atualiza_aluno' pk=aluno.id%}" class="at">Atualizar</a>
+                                <a href="{% url 'website:deleta_aluno' pk=aluno.id%}" class="del">Deletar</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            
+        {% else %}
+            <div class="Fail">Nenhum aluno fora encontrado :(</div>
+        {% endif %}
+        <div class="cadastra">
+            <a href="{% url 'website:cadastra_aluno' %}" class="list-cadastra">Novo Aluno</a>
+        </div>
+    </div>
+
+
+{% endblock %}

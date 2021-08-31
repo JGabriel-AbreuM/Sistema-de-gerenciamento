@@ -1,0 +1,19 @@
+{% extends "website/_layouts/base.html" %}
+
+{% block title %} Página Inicial {% endblock title %}
+
+{% block conteudo %} 
+<div class="nav-card">
+    <div class="card-body">
+        <h5 class="card-title"><strong>Novo Aluno</strong></h5>
+        <p class="card-p">Cadastre aqui um novo aluno</p>
+        <a class="url-link" href="{% url 'website:cadastra_aluno' %}"> Cadastrar </a>
+    </div>
+
+    <div class="card-body">
+        <h5 class="card-title">Ver alunos</h5>
+        <p class="card-p">Veja os alunos cadastrados</p>
+        <a class="url-link" href="{% url 'website:lista_aluno' %}"> Listar </a>
+    </div>
+</div>
+{% endblock conteudo %}

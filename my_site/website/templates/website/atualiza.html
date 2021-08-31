@@ -1,0 +1,47 @@
+{% extends "website/_layouts/base.html" %}
+
+{% load widget_tweaks %}
+
+{% block title %} Atualiza Dados {% endblock %}
+
+{% block conteudo %}
+    <div class="form-container">
+        <legend>Atualiza Dados</legend>
+        <p>Complete o formulário para atualizar os dados de {{ aluno.nome }}</p>
+        <form method="POST">
+            <fieldset>
+                {% csrf_token %}
+
+                <div class="input-container">
+                    <label class="label" for="name">Nome</label>
+                    {% render_field form.nome class+="form-control" id+="nome" name+="nome"%}
+
+                </div>
+                <div class="input-container">
+                    <label class="label" for="surname">Sobrenome</label>
+                    {% render_field form.sobrenome class+="form-control" id+="surname" name+="surname" %}
+
+                </div>
+                <div class="input-container">
+                    <label class="label" for="cpf">CPF</label>      
+                    {% render_field form.cpf class+="form-control" id+="cpf" name+="cpf" pattern+="[0-9]{11}" placeholder+="Apenas números" %}
+
+                </div>
+                <div class="input-container">
+                    <label class="label" for="curso">Curso</label>      
+                    {% render_field form.curso class+="form-control" id+="curso" name+="curso"%}
+
+                </div>
+
+                <div class="input-container">
+                    <label class="label" for="periodo">Periodo</label>      
+                    {% render_field form.periodo class+="form-control" id+="periodo" name+="periodo" type="number"%}
+
+                </div>
+                <div class="form-button">
+                    <button class="go-button">Enviar</button>
+                </div>
+                </fieldset> 
+            </form>
+        </div>
+{% endblock %}

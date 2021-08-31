@@ -1,0 +1,18 @@
+{% extends "website/_layouts/base.html" %}
+
+{% block title %} Página Inicial {% endblock %}
+
+{% block conteudo %}
+    <div class="container-exclui">
+        <h5>Exclui aluno</h5>
+        <p> Tem certeza que desejas excluir <b>{{ aluno.nome }}</b>?</p>
+        
+        <hr/>
+        <form method="POST">
+            {% csrf_token %}
+            <a href="{% url 'website:lista_aluno'%}">Cancelar</a>
+            <button class="excluir">Excluir</button>
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,416 @@
+
+.nav-bar{
+    background-color: rgb(241, 237, 237);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav-item{
+    float: left;
+}
+
+.nav-item .nav-link {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.nav-item .nav-link:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+
+}
+.nv-img {
+    height: 150px;
+    width: 150px;
+}
+
+.orange-line {
+    background-color: #F58220;
+    height: 8px;
+}
+
+.cian-line{
+    background-color: #008E97;
+    height: 6px;
+}
+
+/* index.html */
+
+.nav-card {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 1em 3em;
+    border-radius: 5px;
+    line-height: 1cm;
+    -webkit-box-shadow: 5px 5px 26px 1px rgba(0,0,0,0.48); 
+    box-shadow: 5px 5px 26px 1px rgba(0,0,0,0.48);
+}
+
+.card-body h5 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-body p {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.card-body a {
+    color: white;
+    overflow: hidden;
+    text-decoration: none;
+    background-color: rgb(99, 99, 235);
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.card-body a:hover {
+    background-color: rgb(73, 73, 221);
+    transition: 0.5s;
+}
+
+/*Cria.html*/
+
+.form-container {
+    -webkit-box-shadow: 5px 5px 26px 1px rgba(0,0,0,0.48); 
+    box-shadow: 5px 5px 26px 1px rgba(0,0,0,0.48);
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 40px;
+    line-height: 1cm;
+    box-sizing: border-box;
+    display: block;
+}
+
+.form-container legend {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-container p {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.form-container .label {
+    background-color: white;
+    padding: 10px;
+    font-family: sans-serif; 
+    color: black;   
+}
+
+
+.form-container input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    float: left;
+}
+
+.form-container input:valid,
+.form-container input:focus{
+    border: 1px solid #26a69a;
+}
+
+.input-container {
+    margin-top: 20px;
+}
+
+fieldset {
+    width: 100%;
+}
+
+.form-button {
+    text-align: right;
+}
+.go-button {
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 40px; 
+    background-color: rgb(1, 230, 13);
+    border: 1px solid rgb(1, 230, 13);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.go-button:hover {
+    background-color: white;
+    color: rgb(1, 230, 13);
+}
+
+/* lista.html */
+
+.container-lista {
+    max-width: 80%;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 5px;
+    line-height: 0.8cm;
+    font-size: 0.8em;
+    box-shadow: 4px 4px 27px -2px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 4px 4px 27px -2px rgba(0,0,0,0.66);
+    -moz-box-shadow: 4px 4px 27px -2px rgba(0,0,0,0.66);
+}
+.container-lista table {
+    margin: 0 auto;
+}
+.container-lista h5 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container-lista p {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.container-lista table tr td {
+    padding:0.5em;
+    border:1px solid #ccc;
+    border-top:0;
+    border-left:0;
+}
+
+.container-lista table thead tr th {
+    background-color: #00bcc4;
+    color:#fff;
+    font-size:1.4em;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.container-lista table tbody tr td {
+    font-size: 1.3em;
+}
+
+.container-lista table tbody, thead tr th, td {
+    padding:0.3em;
+    border:1px solid #ccc;
+    border-top:0;
+    border-left:0;
+}
+
+.container-lista table tbody tr {
+    background-color:#fff;
+    color:#666;
+    transition: .2s;
+}
+
+.container-lista table tbody tr:hover {
+    background-color:#f4f4f4;
+    color:#00bcc4;
+    transition: .2s;
+}
+
+.at {
+    color: black;
+    text-decoration: none;
+    background-color: rgb(1, 230, 13);
+    border: 1px solid rgb(1, 230, 13);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .3s;
+    font-family: sans-serif;
+}
+
+.del {
+    color: black;
+    text-decoration: none;
+    background-color: rgb(230, 66, 38);
+    border: 1px solid rgb(230, 66, 38);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .3s;
+    font-family: sans-serif;
+}
+
+.at:hover {
+    color: rgb(1, 230, 13);
+    background-color: white;
+    transition: .3s;
+}
+
+.del:hover {
+    color: rgb(230, 66, 38);
+    background-color: white;
+    transition: .3s;
+}
+
+.cadastra {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.list-cadastra {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(49, 49, 202);
+    border: 1px solid rgb(49, 49, 202);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.list-cadastra:hover {
+    transition: .3s;
+    background-color: white;
+    color: rgb(49, 49, 202);
+}
+/* Exclui.html */
+
+.container-exclui {
+    box-shadow: 4px 4px 27px -2px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 4px 4px 27px -2px rgba(0,0,0,0.66);
+    -moz-box-shadow: 4px 4px 27px -2px rgba(0,0,0,0.66);
+    max-width: 600px;
+    margin: 50px auto;
+    line-height: 1cm;
+    padding: 15px;
+}
+
+.container-exclui h5 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container-exclui p {
+    font-family: sans-serif;
+}
+
+.container-exclui form {
+    text-align: right;
+}
+
+.container-exclui a {
+    text-decoration: none;
+    color: rgb(247, 38, 38);
+    background-color: white;
+    border: 1px solid rgb(247, 38, 38);
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.excluir {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(247, 38, 38);
+    padding: 10px;
+    border: 1px solid rgb(247, 38, 38);
+    font-family: sans-serif;
+    height: 39px;
+    width: 86.03px;
+    cursor: pointer;
+}
+
+.container-exclui b  {
+    font-weight: 600;
+}
+
+/* login.html */
+
+.form-login {
+    -webkit-box-shadow: 5px 5px 26px 1px rgba(0,0,0,0.48); 
+    box-shadow: 5px 5px 26px 1px rgba(0,0,0,0.48);
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 40px;
+
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-login label {
+    background-color: white;
+    padding: 10px;
+    font-family: sans-serif; 
+    color: black;   
+}
+
+.form-login input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid black;
+}
+
+.form-login input:valid,
+.form-login input:focus{
+    border: 1px solid #26a69a;
+}
+
+.button-login {
+    margin: 30px auto 0 auto;
+    width: 15%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(1, 230, 13);
+    border: 1px solid rgb(1, 230, 13);
+    transition: .3s;
+    font-size: 18px;
+}
+
+.button-login:hover {
+    color: rgb(1, 230, 13);
+    background-color: white;
+    transition: .3s;
+}
+
+.form-login h5{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.form-login a {
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    transition: .5s;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}
